@@ -5,8 +5,7 @@ export default function manageBand(state = {
     case 'ADD_BAND':
       return {
         ...state,
-        ...state.name,
-        name: state.name
+        bands: [...state.bands, action.band]
       }
     default: 
     return state
